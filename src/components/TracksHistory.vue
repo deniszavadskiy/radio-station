@@ -1,4 +1,27 @@
-<template></template>
+<template>
+  <div class="history-tracks">
+    <TrackItem v-for="track in tracks" :key="track.time" :track="track"></TrackItem>
+  </div>
+</template>
 
-<script setup lang="ts"></script>
-<style lang="scss" scoped></style>
+<script setup lang="ts">
+import type { Track } from '@/services/radio.service';
+import TrackItem from './TrackItem.vue';
+
+const props = defineProps<{ tracks: Track[] }>();
+</script>
+
+<style lang="scss" scoped>
+.history-tracks {
+  overflow: scroll;
+  margin-top: 25px;
+  height: 30rem;
+
+  :deep(.history-track) {
+    &:not(:first-of-type):not(:last-of-type) {
+      margin: 25px 0;
+    }
+  }
+
+}
+</style>

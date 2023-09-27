@@ -27,7 +27,6 @@ export async function fetchTracks(): Promise<{ nowplaying: Track[] }> {
     return data;
   } catch (error) {
     console.error(error);
+    return { nowplaying: [] };
   }
-
-  return { nowplaying: [] };
 }
