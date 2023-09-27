@@ -1,16 +1,25 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <RadioApp :tracks="tracks"></RadioApp>
 </template>
 
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue';
+import { fetchTracks, type Track } from '@/services/radio.service';
+import RadioApp from '@/components/RadioApp.vue';
+
+const tracks = ref<Track[]>([]);
+
+const fetchData = async () => {
+  const { nowplaying } = await fetchTracks();
+
+  tracks.value = nowplaying;
+}
+
+const timer = setInterval(fetchData, 2000);
+
+onMounted(fetchData);
+onUnmounted(() => clearInterval(timer));
+</script>
+
 <style lang="scss" scoped></style>
+./services/radio.service
