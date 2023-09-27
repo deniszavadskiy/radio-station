@@ -2,6 +2,10 @@
 
 This project is a Vue.js 3.x application built with Vite.js and TypeScript. It fetches and displays current track data from a JSON file provided by the radio station. The JSON file periodically updates as the radio station plays tracks, and the page contents are updated every 2 seconds. This README will guide you through setting up and using this project.
 
+<p align="center">
+  <img src="https://github.com/deniszavadskiy/radio-station/assets/19765135/b0cfe760-e964-40eb-9e58-6fc9af8aa129">
+</p>
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
