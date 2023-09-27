@@ -1,46 +1,65 @@
-# radio-station
+# VueJs 3.x, ViteJs, and TypeScript Radio Website
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a Vue.js 3.x application built with Vite.js and TypeScript. It fetches and displays current track data from a JSON file provided by the radio station. The JSON file periodically updates as the radio station plays tracks, and the page contents are updated every 2 seconds. This README will guide you through setting up and using this project.
 
-## Recommended IDE Setup
+## Prerequisites
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Before you begin, ensure you have the following installed:
 
-## Type Support for `.vue` Imports in TS
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Getting Started
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+1.  Clone this repository to your local machine: `git clone https://github.com/deniszavadskiy/radio-station.git`
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+2.  Navigate to the project directory: `cd radio-station`
 
-## Customize configuration
+3.  Install project dependencies: `npm ci`
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Running the Server (CORS Issue Resolution)
 
-## Project Setup
+To resolve CORS issues when fetching data from the radio API, a server is provided in the `server` folder. You need to run this server before launching the Vue.js app.
 
-```sh
-npm install
-```
+1.  Navigate to the server folder: `cd server`
 
-### Compile and Hot-Reload for Development
+2.  Start the server: `node index.js`
 
-```sh
-npm run dev
-```
+The server will be running on `http://localhost:3000` and proxy requests to the radio API to avoid CORS issues.
 
-### Type-Check, Compile and Minify for Production
+## Running the Vue.js App
 
-```sh
-npm run build
-```
+After starting the server, you can launch the Vue.js app.
 
-### Lint with [ESLint](https://eslint.org/)
+1.  Back in the root directory of the project, start the Vue.js development server: `npm run dev`
 
-```sh
-npm run lint
-```
+2.  The Vue.js app will be available at `http://localhost:PORT`. Open this URL in your web browser to access the radio website.
+
+## Features
+
+1.  **Track Display**: All tracks from the JSON file are displayed on the page. The "playing" item is at the top, followed by the "history" items in reverse chronological order.
+2.  **Progress Bar**: The "playing" item features a progress bar indicating the playtime of the track.
+3.  **Track Information**: For each track item, the following information is displayed:
+
+    - Title
+    - Artist
+    - Image URL (as an image)
+    - Duration
+    - Start Time (in the local time of the browser)
+
+## Styling
+
+The styling of the page has been implemented with CSS to provide an appealing user interface. The styling is intentionally left open for customization according to your project's design guidelines.
+
+## Project Structure
+
+This project is structured following best practices to ensure easy integration into existing projects. Key directories and files include:
+
+- `src/components`: Contains Vue.js components, organized for reusability and maintainability.
+- `src/App.vue`: The root Vue.js component.
+- `src/main.ts`: The main entry point of the Vue.js app.
+- `src/services`: Includes API-related code, such as fetching data from the radio API.
+
+## Conclusion
+
+This Vue.js 3.x project, built with Vite.js and TypeScript, allows you to display current track data from a radio station's JSON file. It includes a server to resolve CORS issues when fetching data from the API, and the project is structured for easy integration into larger applications. Customize the styling to fit your design requirements and make use of the components as needed. Enjoy using and extending this radio website!
