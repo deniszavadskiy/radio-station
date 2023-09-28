@@ -1,6 +1,6 @@
 <template>
   <div class="radio-app">
-    <NowPlayingTrack :track="nowPlayingTrack"></NowPlayingTrack>
+    <NowPlayingTrack v-if="nowPlayingTrack" :track="nowPlayingTrack"></NowPlayingTrack>
     <TracksHistory :tracks="historyTracks"></TracksHistory>
   </div>
 </template>

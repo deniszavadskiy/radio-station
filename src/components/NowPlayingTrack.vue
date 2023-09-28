@@ -1,5 +1,5 @@
 <template>
-  <div class="playing-track" v-if="track">
+  <div class="playing-track">
     <img :src="track.imageUrl" alt="track artwork" class="playing-track__artwork">
     <div class="playing-track__meta">
       <h2 class="playing-track__title">{{ track.title }}</h2>
@@ -13,13 +13,9 @@
 import type { Track } from '@/services/radio.service';
 import { computed } from 'vue';
 
-const props = defineProps<{ track: Track | null }>()
+const props = defineProps<{ track: Track }>()
 
 const progress = computed(() => {
-  if (!props.track) {
-    return 0;
-  }
-
   const startTime = new Date(props.track.time).getTime();
   const now = new Date().getTime();
   const [hours, minutes, seconds] = props.track.duration.split(':').map(Number);
