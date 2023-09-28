@@ -14,12 +14,12 @@ const props = defineProps<{ tracks: Track[] }>();
 <style lang="scss" scoped>
 .history-tracks {
   overflow: scroll;
-  margin-top: 25px;
+  margin-top: 1.5rem;
   height: 30rem;
 
   :deep(.history-track) {
     &:not(:first-of-type):not(:last-of-type) {
-      margin: 25px 0;
+      margin: 1.5rem 0;
     }
   }
 

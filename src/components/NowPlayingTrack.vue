@@ -30,6 +30,10 @@ watchEffect(() => {
     const totalSeconds = hours * 3600 + minutes * 60 + seconds;
     const elapsedSeconds = Math.floor((now - startTime) / 1000);
     currentProgress.value = (elapsedSeconds / totalSeconds) * 100;
+
+    if (elapsedSeconds >= totalSeconds) {
+      clearInterval(interval.value);
+    }
   }, 1000)
 })
 </script>
