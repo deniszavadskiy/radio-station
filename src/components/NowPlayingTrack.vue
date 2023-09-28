@@ -5,26 +5,33 @@
       <h2 class="playing-track__title">{{ track.title }}</h2>
       <p class="playing-track__artist"> {{ track.artist }}</p>
     </div>
-    <progress class="playing-track__progress" :value="progress" min="0" max="100"></progress>
+    <progress class="playing-track__progress" :value="currentProgress" min="0" max="100"></progress>
   </div>
 </template>
 
 <script setup lang="ts">
 import type { Track } from '@/services/radio.service';
-import { computed } from 'vue';
+import { ref, watchEffect } from 'vue';
 
 const props = defineProps<{ track: Track }>()
+const currentProgress = ref(0);
+const interval = ref(0);
 
-const progress = computed(() => {
+watchEffect(() => {
   const startTime = new Date(props.track.time).getTime();
-  const now = new Date().getTime();
-  const [hours, minutes, seconds] = props.track.duration.split(':').map(Number);
-  const totalSeconds = hours * 3600 + minutes * 60 + seconds;
-  const elapsedSeconds = Math.floor((now - startTime) / 1000);
-  const currentProgress = (elapsedSeconds / totalSeconds) * 100;
 
-  return Math.min(100, currentProgress);
-});
+  if (interval.value) {
+    clearInterval(interval.value);
+  }
+
+  interval.value = setInterval(() => {
+    const now = new Date().getTime();
+    const [hours, minutes, seconds] = props.track.duration.split(':').map(Number);
+    const totalSeconds = hours * 3600 + minutes * 60 + seconds;
+    const elapsedSeconds = Math.floor((now - startTime) / 1000);
+    currentProgress.value = (elapsedSeconds / totalSeconds) * 100;
+  }, 1000)
+})
 </script>
 
 <style lang="scss" scoped>
