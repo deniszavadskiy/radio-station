@@ -10,9 +10,10 @@ import { useCached } from '@vueuse/core';
 
 const tracks = ref<Track[]>([]);
 
-const cachedTracks = useCached<Track[]>(tracks, (_tracks, _cached) => {
-  const nowplayingTrack = _tracks.find(({ status }) => status === 'playing') || null;
-  const nowplayingTrackCache = _cached.find(({ status }) => status === 'playing') || null;
+const cachedTracks = useCached<Track[]>(tracks, (_tracks, _cachedTracks) => {
+  const isTrackPlaying = ({ status }: Track) => status === 'playing';
+  const nowplayingTrack = _tracks.find(isTrackPlaying) || null;
+  const nowplayingTrackCache = _cachedTracks.find(isTrackPlaying) || null;
 
   return !!nowplayingTrack && !!nowplayingTrackCache && nowplayingTrack.time === nowplayingTrackCache.time;
 })
