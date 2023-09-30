@@ -15,16 +15,16 @@ import { ref, watchEffect } from 'vue';
 
 const props = defineProps<{ track: Track }>()
 const currentProgress = ref(0);
-const interval = ref(0);
+let interval = -1;
 
 watchEffect(() => {
   const startTime = new Date(props.track.time).getTime();
 
-  if (interval.value) {
-    clearInterval(interval.value);
+  if (interval) {
+    clearInterval(interval);
   }
 
-  interval.value = setInterval(() => {
+  interval = setInterval(() => {
     const now = new Date().getTime();
     const [hours, minutes, seconds] = props.track.duration.split(':').map(Number);
     const totalSeconds = hours * 3600 + minutes * 60 + seconds;
@@ -32,7 +32,7 @@ watchEffect(() => {
     currentProgress.value = (elapsedSeconds / totalSeconds) * 100;
 
     if (elapsedSeconds >= totalSeconds) {
-      clearInterval(interval.value);
+      clearInterval(interval);
     }
   }, 1000)
 })
