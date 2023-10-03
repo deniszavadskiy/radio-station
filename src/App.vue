@@ -4,9 +4,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { useCached } from '@vueuse/core';
 import { fetchTracks, type Track } from '@/services/radio.service';
 import RadioApp from '@/components/RadioApp.vue';
-import { useCached } from '@vueuse/core';
 
 const tracks = ref<Track[]>([]);
 
