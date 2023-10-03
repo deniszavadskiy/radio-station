@@ -6,7 +6,7 @@
       <p>{{ track.artist }}</p>
       <p class="history-track__meta__duration">{{ track.duration }}</p>
     </div>
-    <p class="history-track__time">{{ trackStartTime }}</p>
+    <p class="history-track__time" data-cy="track-start-time">{{ trackStartTime }}</p>
   </div>
 </template>
 
