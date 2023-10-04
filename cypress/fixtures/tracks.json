@@ -1,0 +1,227 @@
+[
+  {
+    "artist": "Rui Da Silva",
+    "duration": "00:03:29",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/touch-me-radio-edit/id172331871?i=172331875&uo=4",
+    "imageUrl": "http://is5.mzstatic.com/image/thumb/Music/v4/b7/30/f2/b730f2a6-b534-bf21-1247-9adaf1805f20/source/450x450bb.jpg",
+    "status": "playing",
+    "time": "2023-10-04T13:55:09Z",
+    "title": "Touch Me"
+  },
+  {
+    "artist": "Rem",
+    "duration": "00:03:42",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/shiny-happy-people/id1172595716?i=1172596449&uo=4",
+    "imageUrl": "http://is4.mzstatic.com/image/thumb/Music71/v4/c9/06/0e/c9060e39-9b91-06e8-2a8d-08c09cf8c3de/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:51:30Z",
+    "title": "Shiny Happy People"
+  },
+  {
+    "artist": "Dr  Alban",
+    "duration": "00:03:15",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/its-my-life/id1217232279?i=1217232322&uo=4",
+    "imageUrl": "http://is4.mzstatic.com/image/thumb/Music111/v4/6b/aa/b1/6baab1a2-af25-ad08-edb0-ae4aad4342d6/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:49:05Z",
+    "title": "It's My Life"
+  },
+  {
+    "artist": "Ed Sheeran",
+    "duration": "00:03:22",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/shivers/1581087024?i=1581087034&uo=4",
+    "imageUrl": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/71/ed/6a/71ed6a77-af0d-fb96-f23e-d0d250bd054b/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:44:05Z",
+    "title": "Shivers"
+  },
+  {
+    "artist": "David Guetta",
+    "duration": "00:03:15",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/flames/1358283970?i=1358284336&uo=4",
+    "imageUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/2d/b3/17/2db317b9-71f2-b01a-8deb-ada74bb8933d/190295654917.jpg/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:38:15Z",
+    "title": "Flames (Feat. Sia)"
+  },
+  {
+    "artist": "Kylie Minogue",
+    "duration": "00:03:50",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/cant-get-you-out-of-my-head/id697279032?i=697279445&uo=4",
+    "imageUrl": "http://is2.mzstatic.com/image/thumb/Music/v4/f9/d7/36/f9d73638-a5ff-9980-7aa3-e331955c4393/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:34:40Z",
+    "title": "Can't Get You Out of My Head"
+  },
+  {
+    "artist": "Lene Marlin",
+    "duration": "00:03:53",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/sitting-down-here/id693449051?i=693449095&uo=4",
+    "imageUrl": "http://is3.mzstatic.com/image/thumb/Music4/v4/5c/32/a4/5c32a461-bfb6-d534-bd8f-294073c8190c/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:31:05Z",
+    "title": "Sitting Down Here"
+  },
+  {
+    "artist": "Inner City",
+    "duration": "00:04:04",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/good-life/id724913797?i=724914318&uo=4",
+    "imageUrl": "http://is3.mzstatic.com/image/thumb/Music/v4/25/28/7b/25287b86-434c-3050-7c47-76193f6ccea3/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:25:17Z",
+    "title": "Good Life"
+  },
+  {
+    "artist": "Jason Derulo",
+    "duration": "00:03:35",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/trumpets/id684559674?i=684559679&uo=4",
+    "imageUrl": "http://is4.mzstatic.com/image/thumb/Music/v4/9e/7a/64/9e7a6447-3c80-095d-4c3e-a887c3fdf724/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:21:48Z",
+    "title": "Trumpets"
+  },
+  {
+    "artist": "Paolo Nutini",
+    "duration": "00:03:21",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/new-shoes/id164397762?i=164397808&uo=4",
+    "imageUrl": "http://is4.mzstatic.com/image/thumb/Music/v4/d8/21/f4/d821f493-a034-2d94-7c3e-bb71a67e0ee8/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:16:08Z",
+    "title": "New Shoes"
+  },
+  {
+    "artist": "Jax Jones",
+    "duration": "00:03:19",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/this-is-real/1472501770?i=1472501918&uo=4",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/bf/67/d5/bf67d5b7-9bbe-1296-4f6b-60955deb77a5/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:12:50Z",
+    "title": "This Is Real (Feat. Ella Henderson)"
+  },
+  {
+    "artist": "Mark Ronson",
+    "duration": "00:03:54",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/uptown-funk-feat-bruno-mars/943946661?i=943946671&uo=4",
+    "imageUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/7e/30/c5/7e30c572-aa47-5f7b-c6fd-42d50cd2c56d/886444959797.jpg/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:08:53Z",
+    "title": "Uptown Funk (Feat. Bruno Mars)"
+  },
+  {
+    "artist": "Nathan Dawe",
+    "duration": "00:02:09",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/sweet-lies/1649369673?i=1649369675&uo=4",
+    "imageUrl": "https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/6f/f4/3f/6ff43fcc-e696-3541-7dee-0e03ed806dd4/5054197395444.jpg/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:06:21Z",
+    "title": "Sweet Lies (Feat. Talia Mar)"
+  },
+  {
+    "artist": "Lost Frequencies",
+    "duration": "00:02:37",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/where-are-you-now/1576395044?i=1576395046&uo=4",
+    "imageUrl": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/4f/31/6e/4f316e60-816c-4423-04ba-889e8ac50732/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T13:03:47Z",
+    "title": "Where Are You Now"
+  },
+  {
+    "artist": "Silk City",
+    "duration": "00:03:58",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/electricity-feat-diplo-dua-lipa-mark-ronson-mk-remix/1441152241?i=1441152243&uo=4",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d5/b9/10/d5b91026-cded-35da-62c1-556d2b106b61/886447425725.jpg/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:54:08Z",
+    "title": "Electricity (Feat. Dua Lipa, Diplo & Mark Ronson)"
+  },
+  {
+    "artist": "Montell Jordan",
+    "duration": "00:03:39",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/the-party-this-is-how-we-do-it-feat-montell-jordan/id992425256?i=992425257&uo=4",
+    "imageUrl": "http://is5.mzstatic.com/image/thumb/Music1/v4/45/e5/91/45e59168-8eda-8027-3d1c-f96673aa8334/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:51:07Z",
+    "title": "This Is How We Do It"
+  },
+  {
+    "artist": "Rihanna",
+    "duration": "00:03:56",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/only-girl-in-the-world/id458304705?i=458304723&uo=4",
+    "imageUrl": "http://is1.mzstatic.com/image/thumb/Music/v4/d5/6d/8f/d56d8f6e-a797-707e-5475-29ae782bce60/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:47:13Z",
+    "title": "Only Girl (In the World)"
+  },
+  {
+    "artist": "Joel Corry",
+    "duration": "00:03:07",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/lionheart-feat-tom-grennan-strings-version/1660859503?i=1660859908&uo=4",
+    "imageUrl": "https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/d5/4b/64/d54b643b-a748-3c7f-d629-7e50885cd93d/5054197495960.jpg/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:44:09Z",
+    "title": "Lionheart (Fearless) (Feat. Tom Grennan)"
+  },
+  {
+    "artist": "Calvin Harris",
+    "duration": "00:03:40",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/summer/id922876176?i=922876189&uo=4",
+    "imageUrl": "http://is1.mzstatic.com/image/thumb/Music5/v4/ba/de/3b/bade3b71-be5c-9a46-d3c9-4c73f3932e0a/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:40:36Z",
+    "title": "Summer"
+  },
+  {
+    "artist": "Anne Marie",
+    "duration": "00:03:05",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/perfect-to-me/1440176708?i=1440176710&uo=4",
+    "imageUrl": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/8d/d4/34/8dd4345b-9662-af66-e3e0-7c43c2cdc632/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:35:37Z",
+    "title": "Perfect to Me"
+  },
+  {
+    "artist": "Pet Shop Boys",
+    "duration": "00:04:16",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/what-have-i-done-to-deserve-this-remastered/id693154291?i=693154533&uo=4",
+    "imageUrl": "http://is3.mzstatic.com/image/thumb/Music118/v4/b1/a4/9b/b1a49bad-9fd6-8e33-9626-c7b7fd3a2fb5/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:32:14Z",
+    "title": "What Have I Done to Deserve This"
+  },
+  {
+    "artist": "Shawn Mendes",
+    "duration": "00:02:52",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/wonder/1533345318?i=1533345325&uo=4",
+    "imageUrl": "https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/ab/65/36/ab653661-1b63-ca02-0f19-aed1b5c1ed9c/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:29:26Z",
+    "title": "Wonder"
+  },
+  {
+    "artist": "Lizzo",
+    "duration": "00:03:06",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/2-be-loved-am-i-ready/1619161952?i=1619162365&uo=4",
+    "imageUrl": "https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/63/4a/b8/634ab8d4-abbd-d00a-8913-3048bc89cb4d/075679749123_01.jpg/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:26:23Z",
+    "title": "2 Be Loved (Am I Ready)"
+  },
+  {
+    "artist": "Justin Bieber",
+    "duration": "00:02:50",
+    "iTunesTrackUrl": "https://music.apple.com/gb/album/hold-on/1556175419?i=1556175852&uo=4",
+    "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6d/78/65/6d786571-271b-3fb0-9612-05162bb6b5ae/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:23:32Z",
+    "title": "Hold On"
+  },
+  {
+    "artist": "Berri",
+    "duration": "00:03:28",
+    "iTunesTrackUrl": "https://itunes.apple.com/gb/album/sunshine-after-the-rain/1002435693?i=1002437373&uo=4",
+    "imageUrl": "https://is5-ssl.mzstatic.com/image/thumb/Music7/v4/92/a9/03/92a903b4-6550-4988-73f7-b08ca20f7857/source/450x450bb.jpg",
+    "status": "history",
+    "time": "2023-10-04T12:18:54Z",
+    "title": "The Sunshine After the Rain"
+  }
+]

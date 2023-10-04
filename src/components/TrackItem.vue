@@ -1,10 +1,10 @@
 <template>
   <div class="history-track">
-    <img :src="track.imageUrl" alt="track artwork" class="history-track__artwork">
+    <img :src="track.imageUrl" alt="track artwork" class="history-track__artwork" data-cy="track-image">
     <div class="history-track__meta">
-      <h3>{{ track.title }}</h3>
-      <p>{{ track.artist }}</p>
-      <p class="history-track__meta__duration">{{ track.duration }}</p>
+      <h3 data-cy="track-title">{{ track.title }}</h3>
+      <p data-cy="track-artist">{{ track.artist }}</p>
+      <p class="history-track__meta__duration" data-cy="track-duration">{{ track.duration }}</p>
     </div>
     <p class="history-track__time" data-cy="track-start-time">{{ trackStartTime }}</p>
   </div>

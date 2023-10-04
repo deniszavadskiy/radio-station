@@ -5,13 +5,14 @@
       <h2 class="playing-track__title">{{ track.title }}</h2>
       <p class="playing-track__artist"> {{ track.artist }}</p>
     </div>
-    <progress class="playing-track__progress" :value="currentProgress" min="0" max="100"></progress>
+    <progress class="playing-track__progress" :value="currentProgress" min="0" max="100"
+      data-cy="progress-bar"></progress>
   </div>
 </template>
 
 <script setup lang="ts">
 import type { Track } from '@/services/radio.service';
-import { ref, watchEffect } from 'vue';
+import { onUnmounted, ref, watchEffect } from 'vue';
 
 const props = defineProps<{ track: Track }>()
 const currentProgress = ref(0);
@@ -30,13 +31,15 @@ watchEffect(() => {
     const now = new Date().getTime();
     const elapsedSeconds = Math.floor((now - startTime) / 1000);
 
-    currentProgress.value = (elapsedSeconds / totalSeconds) * 100;
+    currentProgress.value = Math.min((elapsedSeconds / totalSeconds) * 100, 100);
 
     if (elapsedSeconds >= totalSeconds) {
       clearInterval(interval);
     }
   }, 1000)
 })
+
+onUnmounted(() => interval && clearInterval(interval))
 </script>
 
 <style lang="scss" scoped>
