@@ -1,6 +1,6 @@
 <template>
   <div class="history-track">
-    <img :src="track.imageUrl" alt="track artwork" class="history-track__artwork" data-cy="track-image">
+    <img :src="track.imageUrl" alt="track artwork" class="history-track__artwork" data-cy="track-image" />
     <div class="history-track__meta">
       <h3 data-cy="track-title">{{ track.title }}</h3>
       <p data-cy="track-artist">{{ track.artist }}</p>
@@ -16,8 +16,7 @@ import { computed } from 'vue';
 
 const props = defineProps<{ track: Track }>();
 
-const trackStartTime = computed(() => new Date(props.track.time).toLocaleTimeString())
-
+const trackStartTime = computed(() => new Date(props.track.time).toLocaleTimeString());
 </script>
 
 <style lang="scss" scoped>

@@ -8,7 +8,7 @@
 import type { Track } from '@/services/radio.service';
 import TrackItem from './TrackItem.vue';
 
-const props = defineProps<{ tracks: Track[] }>();
+defineProps<{ tracks: Track[] }>();
 </script>
 
 <style lang="scss" scoped>
@@ -22,6 +22,5 @@ const props = defineProps<{ tracks: Track[] }>();
       margin: 1.5rem 0;
     }
   }
-
 }
 </style>

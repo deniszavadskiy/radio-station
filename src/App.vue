@@ -16,13 +16,13 @@ const cachedTracks = useCached<Track[]>(tracks, (_tracks, _cachedTracks) => {
   const nowplayingTrackCache = _cachedTracks.find(isTrackPlaying) || null;
 
   return !!nowplayingTrack && !!nowplayingTrackCache && nowplayingTrack.time === nowplayingTrackCache.time;
-})
+});
 
 const fetchData = async () => {
   const { nowplaying } = await fetchTracks();
 
   tracks.value = nowplaying;
-}
+};
 
 const timer = setInterval(fetchData, 2000);
 

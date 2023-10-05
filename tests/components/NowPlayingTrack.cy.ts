@@ -1,14 +1,13 @@
 import '@/assets/main.css';
 import NowPlayingTrack from '@/components/NowPlayingTrack.vue';
-import type { Track } from '@/services/radio.service'
+import type { Track } from '@/services/radio.service';
 
 describe('<NowPlayingTrack />', () => {
-
   beforeEach(function () {
     cy.fixture<Track[]>('tracks').then((tracks) => {
       this.nowPlayingTrack = tracks.find(({ status }) => status === 'playing');
-    })
-  })
+    });
+  });
 
   it('renders', function () {
     cy.mount(NowPlayingTrack, {
@@ -25,6 +24,6 @@ describe('<NowPlayingTrack />', () => {
       }
     });
 
-    cy.get('[data-cy=progress-bar]').should('have.attr', 'value').and('equal', '100')
-  })
+    cy.get('[data-cy=progress-bar]').should('have.attr', 'value').and('equal', '100');
+  });
 });

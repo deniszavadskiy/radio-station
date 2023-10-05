@@ -8,13 +8,14 @@
     "src/**/*.js",
     "src/**/*.tsx",
     "src/**/*.json",
-    "cypress"
+    "cypress",
+    "tests"
   ],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
-    "types":["cypress"],
+    "types": ["cypress"],
     "paths": {
       "@/*": ["./src/*"]
     }
